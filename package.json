@@ -1,0 +1,26 @@
+{
+  "name": "web-project",
+  "version": "1.0.0",
+  "description": "Web project for school.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgmatev/WEB-Project.git"
+  },
+  "author": "PGMatev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pgmatev/WEB-Project/issues"
+  },
+  "homepage": "https://github.com/pgmatev/WEB-Project#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.1.0",
+    "gulp-uglifycss": "^1.1.0"
+  }
+}
