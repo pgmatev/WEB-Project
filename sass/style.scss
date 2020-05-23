@@ -1,0 +1,38 @@
+$primaryClr : #11a35f;
+
+@mixin displayFlex() {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+
+}
+
+body{
+    font-family: Arial,Helvetica,Helvetica,sans-serif
+}
+
+.header {
+    // @include displayFlex;
+    background-color: $primaryClr;
+    padding: 20px;
+    img {
+        height: 104px;
+        width: 128px;
+    }
+    @media (min-width: 400px){
+        .header-left {
+            box-sizing: border-box;
+            display: flex;
+            flex-grow: 1;
+            position: relative;
+            width: 100%;
+            align-items: center;
+            transition: height .2s;
+            font-size: 1.4rem;
+            font-weight: bolder;
+        }
+    }
+};
+
+
