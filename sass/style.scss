@@ -32,6 +32,7 @@ body{
 
 .header {
     @include displayFlex;
+    justify-content: space-between;
     height: 104px;
     // max-width: 1180px;
     position: sticky;
@@ -67,6 +68,7 @@ body{
     }
     .header-right{
         flex-grow: 2;
+        float: right;
         .menu-container {
             @include headers();
             // float: right;    
@@ -78,7 +80,7 @@ body{
             padding-inline-start: 0;
             .icon {
                 display: none;
-              }
+            }
             .menu-item {
                 padding: 16px;
                 a {
@@ -124,8 +126,13 @@ body{
 };
 
 .content{
+    margin: 50px 0 50px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     * {box-sizing: border-box;}
     .article{
+
         max-width: 512px;
         max-height: 512px;
         // margin: 32px;
@@ -133,10 +140,15 @@ body{
         .image {
             display: block;
             width: 100%;
-            height: auto;
+            height: 100%;
+            // transition: all .5s;
+            // &:hover{
+            //     transform: scale(1.2);
+            // }
         }
         
         .overlay {
+
             position: absolute;
             bottom: 0;
             background: rgb(0, 0, 0);
@@ -201,21 +213,28 @@ body{
 
 @media only screen and (max-width: 800px) {
     .header{
+        align-items: center;
         .header-left{
 
             p {
                 display:none;
             }
-            .vertical {
+        }
+        .header-right{
+            .menu-item{
                 display: none;
             }
-        }
-        .header-right li:not(.icon), .menu-item{
-            display: none;
-        }
-        .header-right .icon {
-            float: right;
-            display: block;
+            .menu-container {
+                float: right;
+                .icon {
+                    display: block;
+                    a {
+                        font-size: 36px;
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
         }
     }
 };
