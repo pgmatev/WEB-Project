@@ -81,6 +81,41 @@ body {
           visibility: visible;
           opacity: 1;
           display: block; }
+      .header .header-right .menu-container .menu-item-selected {
+        padding: 16px; }
+        .header .header-right .menu-container .menu-item-selected a {
+          text-align: center;
+          text-decoration: none;
+          color: white;
+          transition-duration: 0.5s; }
+        .header .header-right .menu-container .menu-item-selected:hover {
+          text-decoration: underline; }
+        .header .header-right .menu-container .menu-item-selected .sub-menu {
+          padding: 1px;
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          transition: all 0.5s ease;
+          display: none; }
+          .header .header-right .menu-container .menu-item-selected .sub-menu li {
+            padding: 5px;
+            background-color: #11a35f;
+            clear: both;
+            width: 100%;
+            text-decoration: none;
+            list-style: none;
+            border-left: solid;
+            border-left-width: 5px;
+            border-color: #098c41; }
+            .header .header-right .menu-container .menu-item-selected .sub-menu li:hover {
+              background-color: #098c41; }
+        .header .header-right .menu-container .menu-item-selected:focus-within > .sub-menu,
+        .header .header-right .menu-container .menu-item-selected:hover > .sub-menu {
+          visibility: visible;
+          opacity: 1;
+          display: block; }
+        .header .header-right .menu-container .menu-item-selected a {
+          color: black; }
 
 .content {
   margin: 50px 0 50px 0;
@@ -113,6 +148,57 @@ body {
       text-align: center; }
     .content .article:hover .overlay {
       opacity: 1; }
+  .content .table {
+    display: flex;
+    flex-flow: column;
+    align-items: center; }
+    .content .table .standings {
+      font-size: 1.2rem;
+      max-width: 100%;
+      border-left: 5px solid #098c41;
+      border-right: 5px solid #098c41;
+      border-collapse: collapse; }
+      .content .table .standings .header-row {
+        background-color: #098c41; }
+        .content .table .standings .header-row th {
+          padding: 10px 20px 10px 20px; }
+      .content .table .standings tr:nth-child(even) {
+        background-color: #dddddd; }
+      .content .table .standings .wsg {
+        background-color: #11a35f;
+        color: white; }
+      .content .table .standings td {
+        padding: 10px 20px 10px 20px; }
+        .content .table .standings td a {
+          text-decoration: none;
+          color: black;
+          opacity: 70%; }
+          .content .table .standings td a:hover {
+            opacity: 100%; }
+    .content .table .next-game {
+      width: 100%;
+      background-color: #098c41;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .content .table .next-game .teams {
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        .content .table .next-game .teams .team1 {
+          background-image: url(../images/altach.png);
+          width: 80px;
+          height: 60px;
+          background-size: 80px 60px;
+          background-position: center;
+          background-repeat: no-repeat; }
+        .content .table .next-game .teams .team2 {
+          background-image: url(../images/logo.png);
+          width: 80px;
+          height: 60px;
+          background-size: 80px 60px;
+          background-position: center;
+          background-repeat: no-repeat; }
 
 .footer {
   max-width: 100%;
@@ -164,7 +250,11 @@ body {
         .header .header-right .menu-container .icon a {
           font-size: 36px;
           text-decoration: none;
-          color: white; } }
+          color: white; }
+  .content .table .standings .goals {
+    display: none; }
+  .content .table .standings .games {
+    display: none; } }
 
 @media screen and (max-width: 768px) {
   .header-rightresponsive {
