@@ -121,9 +121,8 @@ body {
   margin: 50px 0 50px 0;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center; }
-  .content * {
-    box-sizing: border-box; }
+  justify-content: center;
+  box-sizing: border-box; }
   .content .article {
     max-width: 512px;
     max-height: 512px;
@@ -199,6 +198,14 @@ body {
           background-size: 80px 60px;
           background-position: center;
           background-repeat: no-repeat; }
+  .content .slider {
+    width: 1080px;
+    margin: auto;
+    position: absolute;
+    border: 5px solid #098c41; }
+    .content .slider .slide {
+      display: flex;
+      width: 100%; }
 
 .footer {
   max-width: 100%;
@@ -263,16 +270,20 @@ body {
       position: absolute;
       right: 0;
       top: 0; }
-    .header-rightresponsive ul {
-      float: none;
-      display: block;
-      text-align: left; }
-      .header-rightresponsive ul li {
-        text-decoration: none; }
-        .header-rightresponsive ul li a {
-          text-decoration: none;
-          color: white; }
-    .header-rightresponsive .sub-menu {
-      float: none; }
-      .header-rightresponsive .sub-menu li {
-        position: relative; } }
+    .header-rightresponsive .menu-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      align-items: center; }
+      .header-rightresponsive .menu-container .icon a {
+        text-decoration: none;
+        color: white; }
+      .header-rightresponsive .menu-container .menu-item a {
+        text-decoration: none;
+        color: white; }
+      .header-rightresponsive .menu-container .menu-item .sub-menu {
+        list-style-type: none;
+        float: none; }
+        .header-rightresponsive .menu-container .menu-item .sub-menu li {
+          position: relative; } }
