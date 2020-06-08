@@ -121,8 +121,9 @@ body {
   margin: 50px 0 50px 0;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  box-sizing: border-box; }
+  justify-content: center; }
+  .content * {
+    box-sizing: border-box; }
   .content .article {
     max-width: 512px;
     max-height: 512px;
