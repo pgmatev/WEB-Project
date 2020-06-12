@@ -247,18 +247,67 @@ body{
             }
         }
     }
-    .slider{
-        // background-color: $secondaryClr;
-        width: 1080px;
-        margin: auto;
-        // overflow: hidden;
-        position: absolute;
-        border: 5px solid $secondaryClr;
-        .slide{
+    .store{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: $primaryClr;
+        width: 100%;
+        .product{
             display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
             width: 100%;
+            border-bottom: 3px solid $secondaryClr;
+            padding: 15px 15px 15px 15px;
+            .image{
+                max-width: 111px;
+                max-height: 125px;
+                img{
+                    max-width: 111px;
+                    max-height: 125px;
+                }
+            }
+            .text{
+                flex-grow: 2;
+                font-size: 1.2rem;
+                font-weight: bolder;
+                text-transform: uppercase;
+                color: white;
+                
+            }
+            .price{
+                button{
+                background-color: #FF3A2F; /* Green */
+                border: none;   
+                color: black;
+                opacity: 70%;
+                padding: 15px 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                &:hover{
+                    opacity: 100%;
+                }
+                }
+            }
         }
-    } 
+        
+    }
+    // .slider{
+    //     // background-color: $secondaryClr;
+    //     width: 1080px;
+    //     margin: auto;
+    //     // overflow: hidden;
+    //     position: absolute;
+    //     border: 5px solid $secondaryClr;
+    //     .slide{
+    //         display: flex;
+    //         width: 100%;
+    //     }
+    // } 
 }
 
 .footer {
