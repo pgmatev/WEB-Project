@@ -16,10 +16,7 @@ $small_height: 55%; 	//Slider height - small display
 $small_nav_width: 15%;// Previous and Next width - small display
 
 $box-shadow: 0 11px 22px rgba(0, 0, 0, 0.20), 0 7px 7px rgba(0, 0, 0, 0.24);
-$brown: #795548;
-$blue: #2196F3;
 $green: $primaryClr;
-$magenta: #F44336;
 $nav_color: $primaryClr;
 $nav_hover_color: $secondaryClr;
 
@@ -116,9 +113,9 @@ $nav_hover_color: $secondaryClr;
 			cursor: pointer;
 		}
 		
-		#dot1:hover {background: $brown;}
-#dot2:hover {background: $magenta;}
-#dot3:hover {background: $blue;}
+		#dot1:hover {background: $primaryClr;}
+#dot2:hover {background: $primaryClr;}
+#dot3:hover {background: $primaryClr;}
 #dot4:hover {background: $green;}
 	}
 }
