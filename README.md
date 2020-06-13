@@ -1,5 +1,5 @@
 # WEB-Project
-https://pgmatev.github.io/WEB-Project/
+https://pgmatev.github.io/WEB-Project/templates/index
 
 ### Built using HTML, CSS, and inline JS. Using GULP and SASS.
 
