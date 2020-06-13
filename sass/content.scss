@@ -1,0 +1,13 @@
+@import 'mixins';
+@import 'article';
+@import 'table';
+@import 'store';
+
+.content{
+
+    margin: 50px 0 50px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    *{box-sizing: border-box;}
+}

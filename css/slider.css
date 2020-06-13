@@ -4,12 +4,6 @@ body {
   width: 100%;
   height: 100%; }
 
-body {
-  margin: 0;
-  font-family: Arial,Helvetica,Helvetica,sans-serif;
-  width: 100%;
-  height: 100%; }
-
 body, html {
   width: 100%;
   height: 100%;
@@ -138,46 +132,3 @@ body, html {
     .container #nav_slide .dots {
       width: 12px;
       height: 12px; } }
-
-.store {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: #11a35f;
-  width: 100%; }
-  .store .product {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    border-bottom: 3px solid #098c41;
-    padding: 15px 15px 15px 15px; }
-    .store .product .image {
-      max-width: 111px;
-      max-height: 125px; }
-      .store .product .image img {
-        max-width: 111px;
-        max-height: 125px;
-        object-fit: cover;
-        object-position: center; }
-    .store .product .text {
-      flex-grow: 2;
-      font-size: 1.2rem;
-      font-weight: bolder;
-      text-transform: uppercase;
-      color: white;
-      padding-left: 4px; }
-    .store .product .price button {
-      background-color: #FF3A2F;
-      /* Green */
-      border: none;
-      color: black;
-      opacity: 70%;
-      padding: 15px 15px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px; }
-      .store .product .price button:hover {
-        opacity: 100%; }
