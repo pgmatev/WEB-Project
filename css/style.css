@@ -246,11 +246,12 @@ body {
   .table .standings {
     font-size: 1.2rem;
     max-width: 100%;
-    border-left: 5px solid #098c41;
-    border-right: 5px solid #098c41;
+    border-left: 5px solid #11a35f;
+    border-right: 5px solid #11a35f;
     border-collapse: collapse; }
     .table .standings .header-row {
-      background-color: #098c41; }
+      background-color: #11a35f;
+      color: white; }
       .table .standings .header-row th {
         padding: 10px 20px 10px 20px; }
     .table .standings tr:nth-child(even) {
@@ -267,8 +268,9 @@ body {
         .table .standings td a:hover {
           opacity: 100%; }
   .table .next-game {
+    color: white;
     width: 100%;
-    background-color: #098c41;
+    background-color: #11a35f;
     display: flex;
     flex-direction: column;
     align-items: center; }
@@ -536,12 +538,11 @@ body {
     font-size: 3.6rem;
     color: #098c41;
     font-weight: bolder;
-    margin: 20px; }
+    margin: 100px; }
   .players .position {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    margin-bottom: 100px; }
+    justify-content: center; }
     .players .position .player {
       max-width: 512px;
       max-height: 512px;
@@ -566,6 +567,10 @@ body {
         text-align: center; }
       .players .position .player:hover .overlay {
         opacity: 1; }
+
+@media only screen and (max-width: 800px) {
+  .players .links {
+    flex-flow: column; } }
 
 .content {
   margin: 50px 0 50px 0;

@@ -35,12 +35,11 @@ body {
     font-size: 3.6rem;
     color: #098c41;
     font-weight: bolder;
-    margin: 20px; }
+    margin: 100px; }
   .players .position {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    margin-bottom: 100px; }
+    justify-content: center; }
     .players .position .player {
       max-width: 512px;
       max-height: 512px;
@@ -65,3 +64,7 @@ body {
         text-align: center; }
       .players .position .player:hover .overlay {
         opacity: 1; }
+
+@media only screen and (max-width: 800px) {
+  .players .links {
+    flex-flow: column; } }
