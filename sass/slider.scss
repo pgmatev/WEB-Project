@@ -128,10 +128,10 @@ $nav_hover_color: $secondaryClr;
 	animation: scroll 1s ease-in-out;
 }
 
-#i1:checked ~ #nav_slide #dot1 {background: $brown;}
-#i2:checked ~ #nav_slide #dot2 {background: $magenta;}
-#i3:checked ~ #nav_slide #dot3 {background: $blue;}
-#i4:checked ~ #nav_slide #dot4 {background: $green;}
+#i1:checked ~ #nav_slide #dot1 {background: $primaryClr;}
+#i2:checked ~ #nav_slide #dot2 {background: $primaryClr;}
+#i3:checked ~ #nav_slide #dot3 {background: $primaryClr;}
+#i4:checked ~ #nav_slide #dot4 {background: $primaryClr;}
 
 
 

@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: Arial,Helvetica,Helvetica,sans-serif;
+  width: 100%;
+  height: 100%; }
+
+.gallery {
+  width: 100%; }
+  .gallery .page-title {
+    display: flex;
+    height: 100px;
+    background-color: #11a35f;
+    color: white;
+    justify-content: center;
+    text-transform: uppercase; }
+    .gallery .page-title h1 {
+      font-size: 2.5rem; }

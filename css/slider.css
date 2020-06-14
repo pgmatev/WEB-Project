@@ -82,11 +82,11 @@ body, html {
       transition: .4s;
       cursor: pointer; }
     .container #nav_slide #dot1:hover {
-      background: #795548; }
+      background: #11a35f; }
     .container #nav_slide #dot2:hover {
-      background: #F44336; }
+      background: #11a35f; }
     .container #nav_slide #dot3:hover {
-      background: #2196F3; }
+      background: #11a35f; }
     .container #nav_slide #dot4:hover {
       background: #11a35f; }
 
@@ -98,13 +98,13 @@ body, html {
   animation: scroll 1s ease-in-out; }
 
 #i1:checked ~ #nav_slide #dot1 {
-  background: #795548; }
+  background: #11a35f; }
 
 #i2:checked ~ #nav_slide #dot2 {
-  background: #F44336; }
+  background: #11a35f; }
 
 #i3:checked ~ #nav_slide #dot3 {
-  background: #2196F3; }
+  background: #11a35f; }
 
 #i4:checked ~ #nav_slide #dot4 {
   background: #11a35f; }
