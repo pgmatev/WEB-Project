@@ -148,11 +148,13 @@ body {
         display: flex;
         flex-direction: column;
         list-style-type: none;
-        align-items: center;
-        justify-content: center; }
-        .header-responsive .header-right-responsive .menu-container .icon a {
-          text-decoration: none;
-          color: white; }
+        justify-content: center;
+        font-weight: bolder; }
+        .header-responsive .header-right-responsive .menu-container .icon {
+          align-items: center; }
+          .header-responsive .header-right-responsive .menu-container .icon a {
+            text-decoration: none;
+            color: white; }
         .header-responsive .header-right-responsive .menu-container .menu-item a {
           text-decoration: none;
           color: white; }

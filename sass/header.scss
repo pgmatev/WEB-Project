@@ -110,10 +110,12 @@
                 // position: relative;
                 display: flex;
                 flex-direction: column;
-                list-style-type: none;;
-                align-items: center;
+                list-style-type: none;
+                // align-items: center;
                 justify-content: center;
+                font-weight: bolder;
                 .icon{
+                    align-items: center;
                     a{
                         text-decoration: none;
                         color: white;
